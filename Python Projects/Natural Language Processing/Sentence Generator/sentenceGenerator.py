@@ -1,3 +1,5 @@
+vim: syntax=java
+
 '''
 Author: Elozino Egonmwan
 Language Modelling 
