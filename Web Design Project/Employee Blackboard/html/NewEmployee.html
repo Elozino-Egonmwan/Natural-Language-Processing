@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head> 
+    <meta charset = "UTF-8">		
+    <title> Institute's Directory | New Employee </title>       
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>            
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- jQuery library DND-->    
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>   
+    <script src="sswBoard.js" type="text/javascript"></script>    
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <meta name="viewport" content="width=device-width">    
+    <style>
+		body{
+			height : 1300px;			
+			background: linear-gradient(#333, 	#E0E0E0, #3366CC); /* Standard syntax (must be last) */
+		}	
+		
+		.sswNavBar
+		{
+			text-align:center;
+									
+			
+		}
+		.sswNavBar .nav {
+			float:none;
+		}
+		.sswNavBar .nav li{
+			display:inline-block;
+			float:none;
+			margin:0 10px;
+			vertical-align:middle;
+		}
+		p{
+			text-align:center;			
+		}
+		h1{
+			text-align: center;
+		}
+	</style>           
+  </head>
+  <body id = "bodyGrad" class = "bg-primary" onLoad="activePage(1,'CreateNew')" >  
+  	<?php include 'headerNav.php';  $_SESSION["Location"] = "NewEmployee.html"; ?>    
+    <div class="container">
+    	<div class="jumbotron" style="color:#333">
+          <div><br>
+            <p id = "display"> </p>
+          </div>	              
+          <?php include 'createEmployee.php'; ?>          
+         </div>
+    </div>
+    <?php include 'EmployeeDB.php';?>   
+  </body>  
+</html>     

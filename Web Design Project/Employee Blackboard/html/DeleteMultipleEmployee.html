@@ -1,0 +1,64 @@
+<?php
+// Start the session
+session_start();
+?>
+<!DOCTYPE html>
+<html lang = "en">
+  <head>  
+    <meta charset = "UTF-8">		
+    <title> Institute's Directory | Employees </title>     
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>              
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+    <!-- jQuery library DND   -->   
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>   
+    <script type="text/javascript" src="sswBoard.js"></script>    
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <meta name="viewport" content="width=device-width"> 
+    <style>
+		#bodyGrad{
+						
+			background: linear-gradient(#333, #E0E0E0, #3366CC); /* Standard syntax (must be last) */
+		}		
+		p{
+			text-align:center;			
+		}
+		h1{
+			text-align: center;
+		}
+		.sswNavBar
+		{
+			text-align:center;
+					
+			
+		}
+		.sswNavBar .nav {
+			float:none;
+		}
+		.sswNavBar .nav li{
+			display:inline-block;
+			float:none;
+			margin:0 10px;
+			vertical-align:middle;			
+		}
+	</style>        
+  </head>
+  <body id = "bodyGrad" class = "bg-primary" onLoad="activePage(2,'Directory')" >  
+  	<?php include 'headerNav.php';  $_SESSION["Location"] = "EmployeeDirectory.html"; ?>  
+    <div class="container">
+    	<div class="jumbotron" style="color:#333">
+          <div><br>
+            <p id = "display"> </p>
+          </div>
+           <p><button type="button" class="btn btn-info" onClick = "loader('EmployeeDirectory.html');">SINGLE EDIT</button>&nbsp;
+            <button type="button" class="btn btn-info">SORT</button></p>
+            <p><span class= "glyphicon glyphicon-info-sign"></span> MULTIPLE MODE:<span style= "color:#0C0"> ON</span></p>               
+          <?php include 'multipleDelete.php'; ?> 
+          <p><a href = "javascript:void(0)" onClick = "deleteStaffRecord(this,'.$i.')"  data-toggle="tooltip" title="Delete Staff"><img src="trash.png" class=" trash img-thumbnail" alt="Delete Staff" width="200" height="400"></a> </p>        
+         </div>
+    </div>     
+  </body>  
+</html>     

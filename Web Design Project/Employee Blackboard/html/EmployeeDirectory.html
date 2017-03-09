@@ -1,0 +1,18 @@
+<?php
+// Start the session
+session_start();
+?>
+<!DOCTYPE html>
+<html lang = "en">
+  <head>  
+    <meta charset = "UTF-8">		
+    <title> Institute's Directory | Employees </title>     
+    <?php include 'libraries.php'; ?>    
+  </head>
+  <body id = "bodyGrad" class = "bg-primary" onLoad="activePage(1,'Directory')" >  
+  	<?php $_SESSION["Location"] = "EmployeeDirectory.html";  include 'headerNav.php';?> 
+     <div class="container">
+    	<div class="jumbotron" style="color:#333"><?php include 'editEmployee.php';?></div>         
+     </div>     
+  </body>  
+</html>     

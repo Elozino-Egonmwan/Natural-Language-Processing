@@ -1,0 +1,23 @@
+
+#bodyGrad{			
+	background-color:#666;
+}		
+
+h1,h2, p{
+	text-align: center;
+}
+.sswNavBar
+{
+	text-align:center;		
+}
+.sswNavBar .nav {
+	float:none;	
+}
+.sswNavBar .nav li{
+	display:inline-block;
+	float:none;
+	margin:0 10px;
+	vertical-align:middle;
+	overflow:hidden;			
+}
+

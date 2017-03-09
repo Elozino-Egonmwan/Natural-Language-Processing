@@ -1,0 +1,21 @@
+<?php
+// Start the session
+session_start();
+?>
+<!DOCTYPE html>
+<html lang = "en">
+  <head>  
+    <meta charset = "UTF-8">		
+    <title> Institute's Directory | Home </title>     
+   <?php include 'libraries.php'; ?>     
+  </head>
+  <body id = "bodyGrad" class = "bg-primary" onLoad="activePage(0,'HomePage')" >  
+  	<?php  $_SESSION["Location"] = "Home.html"; include 'headerNav.php';?>    
+    <div class="container">
+      <div class="jumbotron" style="color:#333">
+        <h2 style="color:#3366CC"> SYSTEM SOFTWARE TEAM</h2>
+        <?php include 'viewEmployees.php'; ?>                 
+      </div>    
+    </div>
+  </body>  
+</html>     
