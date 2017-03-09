@@ -1,0 +1,1 @@
+Sentiment Analysis model detects the sentiment of a sentence
