@@ -1,7 +1,0 @@
-sentence_index sentence
-1    I love ice cream
-2    I hate that I love ice cream
-3    I hate that I hate ice cream
-4    A negative negative sentiment
-5    Interestingly confusing
-6    But believe it or not , it 's one of the most beautiful , evocative works I 've seen .
