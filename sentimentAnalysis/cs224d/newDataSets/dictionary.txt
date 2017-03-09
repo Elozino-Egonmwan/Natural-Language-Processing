@@ -1,0 +1,7 @@
+!|0
+I love ice cream|1
+I hate that I love ice cream|2
+I hate that I hate ice cream|3
+A negative negative sentiment|4
+Interestingly confusing|5
+But believe it or not , it 's one of the most beautiful , evocative works I 've seen .|6
